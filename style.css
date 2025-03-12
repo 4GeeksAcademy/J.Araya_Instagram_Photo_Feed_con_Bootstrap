@@ -1,0 +1,8 @@
+.ColorRojo {
+    color: red;
+}
+
+.centrar img {
+    margin: auto;
+    display: block;
+}
