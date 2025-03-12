@@ -20,9 +20,39 @@
         </div>
         <div class="d-flex">
             <div> <!-- Boton verde  -->
-                <button type="button" class="btn btn-success">Create a new post</button>
-
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#miModal">
+                    Create a new post</button>
             </div>
+            <!-- PRUEBA -->
+
+            <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    
+                    
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="miModalLabel">Create a new post</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    
+                    
+                    <div class="modal-body">
+                      Caption:
+                      <input type="text" class="form-control" placeholder="Add the caption of your post here">
+
+                    </div>
+                    
+                    
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                      <button type="button" class="btn btn-success">Publish</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+
+             <!-- Fin de prueba  -->
             <div class="dropdown"> <!-- menu tipo drop  -->
                 <button type="button" class="btn btn-outline-dark dropdown-toggle " type="button"
                     data-bs-toggle="dropdown">
@@ -39,7 +69,7 @@
         </div>
     </nav>
 
-    <!-- Inicia ejemplo -->
+
     <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
@@ -56,72 +86,451 @@
 
             <ul class="list-unstyled row ">
                 <li class="col-4 mb-4">
-                  <img src="https://picsum.photos/200/300?random1" class="img-fluid w-100%" alt="Imagen 1">
+                    <img src="https://picsum.photos/200/300?random=1" class="img-fluid w-100%" alt="Imagen 1">
                 </li>
                 <li class="col-4 mb-4">
-                  <img src="https://picsum.photos/200/300?random2" class="img-fluid w-100%" alt="Imagen 2">
+                    <img src="https://picsum.photos/200/300?random=2" class="img-fluid w-100%" alt="Imagen 2">
                 </li>
                 <li class="col-4 mb-4">
-                  <img src="https://picsum.photos/200/300?random3" class="img-fluid w-100%" alt="Imagen 3">
+                    <img src="https://picsum.photos/200/300?random=3" class="img-fluid w-100%" alt="Imagen 3">
                 </li>
                 <li class="col-4 mb-4">
-                    <img src="https://picsum.photos/200/300?random1" class="img-fluid w-100%" alt="Imagen 1">
-                  </li>
-                  <li class="col-4 mb-4">
-                    <img src="https://picsum.photos/200/300?random2" class="img-fluid w-100%" alt="Imagen 2">
-                  </li>
-                  <li class="col-4 mb-4">
-                    <img src="https://picsum.photos/200/300?random3" class="img-fluid w-100%" alt="Imagen 3">
-                  </li>
-                  <li class="col-4 mb-4">
-                    <img src="https://picsum.photos/200/300?random1" class="img-fluid w-100%" alt="Imagen 1">
-                  </li>
-                  <li class="col-4 mb-4">
-                    <img src="https://picsum.photos/200/300?random2" class="img-fluid w-100%" alt="Imagen 2">
-                  </li>
-                  <li class="col-4 mb-4">
-                    <img src="https://picsum.photos/200/300?random3" class="img-fluid w-100%" alt="Imagen 3">
-                  </li>
-              </ul>
+                    <img src="https://picsum.photos/200/300?random=1" class="img-fluid w-100%" alt="Imagen 1">
+                </li>
+                <li class="col-4 mb-4">
+                    <img src="https://picsum.photos/200/300?random=2" class="img-fluid w-100%" alt="Imagen 2">
+                </li>
+                <li class="col-4 mb-4">
+                    <img src="https://picsum.photos/200/300?random=3" class="img-fluid w-100%" alt="Imagen 3">
+                </li>
+                <li class="col-4 mb-4">
+                    <img src="https://picsum.photos/200/300?random=1" class="img-fluid w-100%" alt="Imagen 1">
+                </li>
+                <li class="col-4 mb-4">
+                    <img src="https://picsum.photos/200/300?random=2" class="img-fluid w-100%" alt="Imagen 2">
+                </li>
+                <li class="col-4 mb-4">
+                    <img src="https://picsum.photos/200/300?random=3" class="img-fluid w-100%" alt="Imagen 3">
+                </li>
+            </ul>
 
         </div>
         <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
             <div class="col-12 d-flex flex-column align-items-center">
                 <ul class="list-unstyled row centrar ">
                     <li class="col-12 mb-4">
-                      <img src="https://picsum.photos/200/300?random1" class="img-fluid w-100%" alt="Imagen 1">
+                        <!-- PRUEBAA -->
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=1" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
+                        <!-- FIN PRUEBA -->
+
+                    <li class="col-12 mb-4">
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=2" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
                     </li>
                     <li class="col-12 mb-4">
-                      <img src="https://picsum.photos/200/300?random2" class="img-fluid w-100%" alt="Imagen 2">
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=3" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
                     </li>
                     <li class="col-12 mb-4">
-                      <img src="https://picsum.photos/200/300?random3" class="img-fluid w-100%" alt="Imagen 3">
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=1" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
                     </li>
                     <li class="col-12 mb-4">
-                        <img src="https://picsum.photos/200/300?random1" class="img-fluid w-100%" alt="Imagen 1">
-                      </li>
-                      <li class="col-12 mb-4">
-                        <img src="https://picsum.photos/200/300?random2" class="img-fluid w-100%" alt="Imagen 2">
-                      </li>
-                      <li class="col-12 mb-4">
-                        <img src="https://picsum.photos/200/300?random3" class="img-fluid w-100%" alt="Imagen 3">
-                      </li>
-                      <li class="col-12 mb-4">
-                        <img src="https://picsum.photos/200/300?random1" class="img-fluid w-100%" alt="Imagen 1">
-                      </li>
-                      <li class="col-12 mb-4">
-                        <img src="https://picsum.photos/200/300?random2" class="img-fluid w-100%" alt="Imagen 2">
-                      </li>
-                      <li class="col-12 mb-4">
-                        <img src="https://picsum.photos/200/300?random3" class="img-fluid w-100%" alt="Imagen 3">
-                      </li>
-                  </ul>
-    
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=2" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="col-12 mb-4">
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=3" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="col-12 mb-4">
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=1" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="col-12 mb-4">
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=2" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
+                    </li>
+                    <li class="col-12 mb-4">
+                        <div class="post-header centrar">
+                            <div class="Icon">
+                                <i class="fa-brands fa-html5"></i>
+                                <div class="Name-user">
+                                    <p><strong>HTML</strong></p>
+                                    <p>Rigoberto</p>
+                                </div>
+                            </div>
+                            <div class="Menu-post">
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
+                            </div>
+                        </div>
+
+                        <div class="Imagen">
+                            <img src="https://picsum.photos/200/300?random=3" alt="Foto random">
+                        </div>
+
+                        <div class="Interacc">
+                            <div class="Reacciones">
+                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-comment"></i>
+                                <i class="fa-regular fa-paper-plane"></i>
+                            </div>
+                            <div class="Guardado">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </div>
+                        </div>
+                        <div class="Texto">
+                            <p>Liked by <strong>4GeeksAcademy</strong>, <strong>html5</strong>, <strong>Web</strong> and
+                                <strong>100,000 others</strong>
+                            </p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                and scrambled it to make a
+                                type specimen book. It has survived not only five centuries, but also the leap into
+                                electronic typesetting,
+                                remaining essentially unchanged. It was popularised in the 1960s with the release of
+                                Letraset sheets containing
+                                Lorem Ipsum passages, and more recently with desktop publishing software like Aldus
+                                PageMaker including versions
+                                of Lorem Ipsum.</p>
+                        </div>
+                </ul>
+
 
             </div>
         </div>
     </div>
-    <!-- Fin de ejemplo -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

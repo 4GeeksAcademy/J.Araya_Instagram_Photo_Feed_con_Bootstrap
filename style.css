@@ -2,7 +2,72 @@
     color: red;
 }
 
-.centrar img {
+.centrar {
     margin: auto;
     display: block;
+}
+
+/* PRUEBA */
+/* body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #1f1e1e;
+    margin: 0;
+    padding: 0;
+} */
+
+.post-header {
+    width: 400px;
+    background-color: aliceblue;
+    color: #000000;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.Icon i {
+    font-size: 35px;
+}
+
+
+.Name-user p {
+    line-height: 0.1;
+    display: flex;
+    align-items: center;
+}
+
+.Imagen {
+    background-color: rgb(221, 230, 230);
+    width: 400px;
+    margin-right: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.Interacc {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+.Texto {
+    background-color: aliceblue;
+    width: 400px;
+    padding: 10px;
+    font-size: 13px;
 }
